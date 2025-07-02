@@ -1,0 +1,104 @@
+body.mistic-body {
+  background: radial-gradient(circle at center, #1e0033, #000000);
+  color: #f8e6ff;
+  font-family: 'MedievalSharp', cursive;
+  text-align: center;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+.titulo {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 2.5rem;
+  color: #e0aaff;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #d2aaff;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-bottom: 40px;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(43, 0, 63, 0.85);
+  border: 2px solid #b88aff;
+  border-radius: 12px;
+  padding: 15px;
+  width: 220px;
+  box-shadow: 0 0 15px #8800ff66;
+  transition: transform 0.3s ease, box-shadow 0.3s;
+  color: #f8e6ff;
+  font-family: 'MedievalSharp', cursive;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #e0aaffaa;
+}
+
+.card img {
+  width: 120px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.boton-mistico {
+  background: #5c0099;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 15px 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 10px #bb86fc;
+  font-family: 'Cinzel Decorative', cursive;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.boton-mistico:hover {
+  background: #7d00cc;
+  box-shadow: 0 0 15px #ffccff;
+}
+
+.precio {
+  font-style: italic;
+  color: #f5d0ff;
+  margin: 10px 0;
+}
+
+#notificacion {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #6a0dad;
+  color: #fff6ff;
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #c084fc;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 999;
+}
+
+.visible {
+  opacity: 1;
+}
